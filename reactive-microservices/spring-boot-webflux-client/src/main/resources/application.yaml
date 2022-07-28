@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: service-client
+
+server:
+  port: 8090
+
+eureka:
+  client:
+    serviceURL:
+      defaultZone: http://localhost:8761/eureka/
+
+config:
+  base:
+    endpoint: http://service-products/api/v2/products

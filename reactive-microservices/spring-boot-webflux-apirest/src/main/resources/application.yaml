@@ -1,0 +1,22 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/spring_boot
+  application:
+    name: service-products
+
+server:
+  port: 8002
+    
+eureka:
+  client:
+    serviceURL:
+      defaultZone: http://localhost:8761/eureka/
+    
+config:
+  uploads:
+    files:
+      path: C://Users//X11608//Pictures//SpringWebFlux//
+      
+  base:
+    endpoint: /api/products
